@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('description');
             $table->integer('price');
             $table->json('tags')->nullable();
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->foreignId('category_id');
             $table->timestamps();
         });
