@@ -3,7 +3,7 @@ models:
     name: string
     description: text
     price: integer
-    tags: json
+    tags: json nullable
     image: string
     relationships:
       belongsTo: Category
