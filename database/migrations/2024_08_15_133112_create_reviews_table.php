@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('content');
             $table->integer('rating');
-            $table->boolean('approved');
+            $table->boolean('approved')->default(false);
             $table->foreignId('product_id');
             $table->timestamps();
         });

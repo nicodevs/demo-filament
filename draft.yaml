@@ -23,6 +23,6 @@ models:
     title: string
     content: text
     rating: integer
-    approved: boolean
+    approved: boolean default:false
     relationships:
       belongsTo: Product
