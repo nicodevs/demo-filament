@@ -21,10 +21,13 @@ class ReviewsRelationManager extends RelationManager
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
-                // Forms\Components\Textarea::make('content')
-                //     ->required(),
-                // Forms\Components\Toggle::make('approved')
-                //     ->required(),
+                Forms\Components\Textarea::make('content')
+                    ->required(),
+                Forms\Components\TextInput::make('rating')
+                    ->required()
+                    ->numeric(),
+                Forms\Components\Toggle::make('approved')
+                    ->required(),
             ]);
     }
 
